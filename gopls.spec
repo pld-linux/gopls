@@ -1,17 +1,17 @@
-%define		vendor_version	0.18.1
+%define		vendor_version	0.19.1
 
 Summary:	Official Go language server developed by the Go team
 Name:		gopls
-Version:	0.18.1
+Version:	0.19.1
 Release:	1
 License:	BSD
 Group:		Development/Tools
 Source0:	https://github.com/golang/tools/archive/gopls/v%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	b4c61f8c06ba9fd9a6d6edc98180d294
+# Source0-md5:	9924b2bd3cfb4efd1cae7f930c5dd35a
 Source1:	%{name}-vendor-%{vendor_version}.tar.xz
-# Source1-md5:	58f3aacb1d4f2f7e1232a504b5b596c1
+# Source1-md5:	30b522ac6a3fdcebc05a2de067ad9063
 URL:		https://pkg.go.dev/golang.org/x/tools/gopls
-BuildRequires:	golang >= 1.22.0
+BuildRequires:	golang >= 1.23.0
 BuildRequires:	rpmbuild(macros) >= 2.009
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
